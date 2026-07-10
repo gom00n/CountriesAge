@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Country Age Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div id="topbar">
+    <div id="search-wrap">
+      <input type="text" id="search-input" placeholder="Search country…" autocomplete="off"/>
+      <ul id="search-dropdown"></ul>
+    </div>
+
+    <div id="controls">
+      <div class="ctrl-group">
+        <label>Mode</label>
+        <div class="btn-group">
+          <button id="btn-simple" onclick="setMode('simple')">Simple</button>
+          <button id="btn-detailed" class="active" onclick="setMode('detailed')">Detailed</button>
+        </div>
+      </div>
+      <div class="ctrl-group">
+        <label>Date type</label>
+        <div class="btn-group">
+          <button id="btn-sov" onclick="setDateType('sovereignty')">First sovereignty</button>
+          <button id="btn-sub" onclick="setDateType('subordination')">Last freed
+            <span class="info-icon" title="The date the country last gained or regained sovereignty from a foreign power (e.g. after occupation or colonial rule). Does not reflect internal revolutions.">i</span>
+          </button>
+          <button id="btn-pol" class="active" onclick="setDateType('political')">Current regime
+            <span class="info-icon" title="When the current political system was established — capturing revolutions, democratisation, and major regime changes (e.g. Iran 1979, Poland 1989).">i</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map"></div>
+
+  <div id="infobox" class="hidden"></div>
+  <div id="legend"></div>
+  <div id="tooltip" class="hidden"></div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
