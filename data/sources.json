@@ -1,0 +1,56 @@
+{
+  "generated": "2026-09-18",
+  "sources": [
+    {
+      "id": "wikipedia-list",
+      "title": "List of modern sovereign states by date of formation",
+      "publisher": "Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation",
+      "retrieved": "2026-04-09",
+      "license": "CC BY-SA 4.0",
+      "fields": ["country", "continent", "sovereignty_date", "last_subordination_date", "previous_power", "notes", "capital"],
+      "script": "scrape.py"
+    },
+    {
+      "id": "wikipedia-regime-articles",
+      "title": "Individual Wikipedia articles on regime-founding events",
+      "publisher": "Wikipedia",
+      "url": "per-country, stored in the political_source field of data/countries.json",
+      "retrieved": "2026-09-18",
+      "license": "CC BY-SA 4.0",
+      "fields": ["political_date", "political_date_note", "political_source"],
+      "script": "add_political_date.py",
+      "note": "67 states are hand-curated; the remaining 130 fall back to last_subordination_date and cite the list above."
+    },
+    {
+      "id": "manual-extras",
+      "title": "Hand-written entries for entities missing from the Wikipedia list",
+      "publisher": "this repository",
+      "url": "https://github.com/gom00n/CountriesAge/blob/main/add_extras.py",
+      "retrieved": "2026-09-18",
+      "license": "CC BY-SA 4.0 (derived from the Wikipedia articles cited in each entry)",
+      "fields": ["all fields for TWN"],
+      "script": "add_extras.py"
+    },
+    {
+      "id": "natural-earth",
+      "title": "Natural Earth 1:50m Admin 0 - Countries",
+      "publisher": "Natural Earth",
+      "url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/",
+      "version": "5.1.1",
+      "license": "Public domain",
+      "fields": ["geometry", "ADM0_A3", "SOV_A3", "ISO_A2_EH", "TYPE", "NAME", "LABEL_X", "LABEL_Y"],
+      "script": "build_topo.sh"
+    },
+    {
+      "id": "iso-codes",
+      "title": "pycountry (ISO 3166)",
+      "publisher": "pycountry",
+      "url": "https://pypi.org/project/pycountry/",
+      "license": "LGPL-2.1",
+      "fields": ["iso_a3"],
+      "script": "add_iso.py",
+      "note": "Kosovo, Palestine and South Sudan use Natural Earth codes (KOS, PSX, SDS) so they match the map."
+    }
+  ]
+}

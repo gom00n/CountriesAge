@@ -14,7 +14,8 @@
     "iso_a3": "AFG",
     "political_date": "2021",
     "political_date_raw": "2021",
-    "political_date_note": "Taliban takeover"
+    "political_date_note": "Taliban takeover",
+    "political_source": "https://en.wikipedia.org/wiki/Fall_of_Kabul_(2021)"
   },
   {
     "country": "Albania",
@@ -31,7 +32,8 @@
     "iso_a3": "ALB",
     "political_date": "1992",
     "political_date_raw": "1992",
-    "political_date_note": "End of communism"
+    "political_date_note": "End of communist rule",
+    "political_source": "https://en.wikipedia.org/wiki/Fall_of_communism_in_Albania"
   },
   {
     "country": "Algeria",
@@ -48,7 +50,8 @@
     "iso_a3": "DZA",
     "political_date": "1962-07-03",
     "political_date_raw": "3 July 1962",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Andorra",
@@ -65,7 +68,8 @@
     "iso_a3": "AND",
     "political_date": "1944-11",
     "political_date_raw": "Nov 1944",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Angola",
@@ -82,7 +86,8 @@
     "iso_a3": "AGO",
     "political_date": "2002",
     "political_date_raw": "2002",
-    "political_date_note": "End of civil war"
+    "political_date_note": "End of the civil war",
+    "political_source": "https://en.wikipedia.org/wiki/Angolan_Civil_War"
   },
   {
     "country": "Antigua and Barbuda",
@@ -99,7 +104,8 @@
     "iso_a3": "ATG",
     "political_date": "1981-11-01",
     "political_date_raw": "1 Nov 1981",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Argentina",
@@ -116,7 +122,8 @@
     "iso_a3": "ARG",
     "political_date": "1816-07-09",
     "political_date_raw": "9 July 1816",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Armenia",
@@ -133,7 +140,8 @@
     "iso_a3": "ARM",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/1991_Armenian_independence_referendum"
   },
   {
     "country": "Australia",
@@ -150,7 +158,8 @@
     "iso_a3": "AUS",
     "political_date": "1942-10-09",
     "political_date_raw": "9 Oct 1942",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Austria",
@@ -167,7 +176,8 @@
     "iso_a3": "AUT",
     "political_date": "1955",
     "political_date_raw": "1955",
-    "political_date_note": "State Treaty, sovereignty fully restored"
+    "political_date_note": "State Treaty, full sovereignty restored",
+    "political_source": "https://en.wikipedia.org/wiki/Austrian_State_Treaty"
   },
   {
     "country": "Azerbaijan",
@@ -184,7 +194,8 @@
     "iso_a3": "AZE",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
     "country": "Bahamas",
@@ -201,7 +212,8 @@
     "iso_a3": "BHS",
     "political_date": "1973-07-10",
     "political_date_raw": "10 July 1973",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Bahrain",
@@ -218,7 +230,8 @@
     "iso_a3": "BHR",
     "political_date": "1971-12-16",
     "political_date_raw": "16 Dec 1971",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Bangladesh",
@@ -235,7 +248,8 @@
     "iso_a3": "BGD",
     "political_date": "1971-12-16",
     "political_date_raw": "16 Dec 1971",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Barbados",
@@ -252,7 +266,8 @@
     "iso_a3": "BRB",
     "political_date": "1966-11-30",
     "political_date_raw": "30 Nov 1966",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Belarus",
@@ -269,7 +284,8 @@
     "iso_a3": "BLR",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
     "country": "Belgium",
@@ -286,7 +302,8 @@
     "iso_a3": "BEL",
     "political_date": "1945",
     "political_date_raw": "1945",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Belize",
@@ -303,7 +320,8 @@
     "iso_a3": "BLZ",
     "political_date": "1981-09-21",
     "political_date_raw": "21 Sep 1981",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Benin",
@@ -320,7 +338,8 @@
     "iso_a3": "BEN",
     "political_date": "1960-08-01",
     "political_date_raw": "1 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Bhutan",
@@ -337,7 +356,8 @@
     "iso_a3": "BTN",
     "political_date": "1616",
     "political_date_raw": "1616",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Bolivia",
@@ -354,7 +374,8 @@
     "iso_a3": "BOL",
     "political_date": "1825-08-06",
     "political_date_raw": "6 Aug 1825",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Bosnia and Herzegovina",
@@ -371,7 +392,8 @@
     "iso_a3": "BIH",
     "political_date": "1992",
     "political_date_raw": "1992",
-    "political_date_note": "Independence from Yugoslavia"
+    "political_date_note": "Independence from Yugoslavia",
+    "political_source": "https://en.wikipedia.org/wiki/1992_Bosnian_independence_referendum"
   },
   {
     "country": "Botswana",
@@ -388,7 +410,8 @@
     "iso_a3": "BWA",
     "political_date": "1966-09-30",
     "political_date_raw": "30 Sep 1966",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Brazil",
@@ -405,7 +428,8 @@
     "iso_a3": "BRA",
     "political_date": "1825-08-29",
     "political_date_raw": "29 Aug 1825",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Brunei",
@@ -422,7 +446,8 @@
     "iso_a3": "BRN",
     "political_date": "1984-01-01",
     "political_date_raw": "1 Jan 1984",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Bulgaria",
@@ -439,7 +464,8 @@
     "iso_a3": "BGR",
     "political_date": "1990",
     "political_date_raw": "1990",
-    "political_date_note": "End of communist rule"
+    "political_date_note": "End of communist rule",
+    "political_source": "https://en.wikipedia.org/wiki/History_of_Bulgaria_since_1989"
   },
   {
     "country": "Burkina Faso",
@@ -456,7 +482,8 @@
     "iso_a3": "BFA",
     "political_date": "1960-08-05",
     "political_date_raw": "5 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Burundi",
@@ -473,7 +500,8 @@
     "iso_a3": "BDI",
     "political_date": "1962-07-01",
     "political_date_raw": "1 July 1962",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Cambodia",
@@ -490,7 +518,8 @@
     "iso_a3": "KHM",
     "political_date": "1993",
     "political_date_raw": "1993",
-    "political_date_note": "UNTAC elections, constitutional monarchy restored"
+    "political_date_note": "UNTAC elections, constitutional monarchy restored",
+    "political_source": "https://en.wikipedia.org/wiki/United_Nations_Transitional_Authority_in_Cambodia"
   },
   {
     "country": "Cameroon",
@@ -507,7 +536,8 @@
     "iso_a3": "CMR",
     "political_date": "1961-10-01",
     "political_date_raw": "1 Oct 1961",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Canada",
@@ -524,7 +554,8 @@
     "iso_a3": "CAN",
     "political_date": "1931-12-11",
     "political_date_raw": "11 Dec 1931",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Cape Verde",
@@ -541,7 +572,8 @@
     "iso_a3": "CPV",
     "political_date": "1975-07-05",
     "political_date_raw": "5 July 1975",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Central African Republic",
@@ -558,7 +590,8 @@
     "iso_a3": "CAF",
     "political_date": "1960-08-13",
     "political_date_raw": "13 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Chad",
@@ -575,7 +608,8 @@
     "iso_a3": "TCD",
     "political_date": "1960-08-11",
     "political_date_raw": "11 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Chile",
@@ -592,7 +626,8 @@
     "iso_a3": "CHL",
     "political_date": "1818-02-12",
     "political_date_raw": "12 Feb 1818",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "China",
@@ -609,7 +644,8 @@
     "iso_a3": "CHN",
     "political_date": "1949",
     "political_date_raw": "1949",
-    "political_date_note": "People's Republic of China founded"
+    "political_date_note": "People's Republic of China proclaimed",
+    "political_source": "https://en.wikipedia.org/wiki/Proclamation_of_the_People's_Republic_of_China"
   },
   {
     "country": "Colombia",
@@ -626,7 +662,8 @@
     "iso_a3": "COL",
     "political_date": "1819-08-07",
     "political_date_raw": "7 Aug 1819",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Comoros",
@@ -643,7 +680,8 @@
     "iso_a3": "COM",
     "political_date": "1975-07-06",
     "political_date_raw": "6 July 1975",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Congo, Democratic Republic of the",
@@ -660,7 +698,8 @@
     "iso_a3": "COD",
     "political_date": "1960-06-30",
     "political_date_raw": "30 June 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Congo, Republic of the",
@@ -677,7 +716,8 @@
     "iso_a3": "COG",
     "political_date": "1960-08-15",
     "political_date_raw": "15 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Costa Rica",
@@ -694,7 +734,8 @@
     "iso_a3": "CRI",
     "political_date": "1838",
     "political_date_raw": "1838",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Croatia",
@@ -711,7 +752,8 @@
     "iso_a3": "HRV",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from Yugoslavia"
+    "political_date_note": "Independence from Yugoslavia",
+    "political_source": "https://en.wikipedia.org/wiki/1991_Croatian_independence_referendum"
   },
   {
     "country": "Cuba",
@@ -728,7 +770,8 @@
     "iso_a3": "CUB",
     "political_date": "1959",
     "political_date_raw": "1959",
-    "political_date_note": "Cuban Revolution"
+    "political_date_note": "Cuban Revolution",
+    "political_source": "https://en.wikipedia.org/wiki/Cuban_Revolution"
   },
   {
     "country": "Cyprus",
@@ -745,7 +788,8 @@
     "iso_a3": "CYP",
     "political_date": "1960-08-16",
     "political_date_raw": "16 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Czechia",
@@ -762,7 +806,8 @@
     "iso_a3": "CZE",
     "political_date": "1993",
     "political_date_raw": "1993",
-    "political_date_note": "Czech Republic formed (dissolution of Czechoslovakia)"
+    "political_date_note": "Czech Republic formed on dissolution of Czechoslovakia",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_Czechoslovakia"
   },
   {
     "country": "Denmark",
@@ -779,7 +824,8 @@
     "iso_a3": "DNK",
     "political_date": "1945-05-05",
     "political_date_raw": "5 May 1945",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Djibouti",
@@ -796,7 +842,8 @@
     "iso_a3": "DJI",
     "political_date": "1977-06-27",
     "political_date_raw": "27 June 1977",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Dominica",
@@ -813,7 +860,8 @@
     "iso_a3": "DMA",
     "political_date": "1978-11-03",
     "political_date_raw": "3 Nov 1978",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Dominican Republic",
@@ -830,7 +878,8 @@
     "iso_a3": "DOM",
     "political_date": "1844-02-27",
     "political_date_raw": "27 Feb 1844",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Ecuador",
@@ -847,7 +896,8 @@
     "iso_a3": "ECU",
     "political_date": "1830-05-13",
     "political_date_raw": "13 May 1830",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Egypt",
@@ -864,7 +914,8 @@
     "iso_a3": "EGY",
     "political_date": "1922-02-28",
     "political_date_raw": "28 Feb 1922",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "El Salvador",
@@ -881,7 +932,8 @@
     "iso_a3": "SLV",
     "political_date": "1841-02-01",
     "political_date_raw": "1 Feb 1841",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Equatorial Guinea",
@@ -898,7 +950,8 @@
     "iso_a3": "GNQ",
     "political_date": "1968-10-12",
     "political_date_raw": "12 Oct 1968",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Eritrea",
@@ -915,7 +968,8 @@
     "iso_a3": "ERI",
     "political_date": "1993",
     "political_date_raw": "1993",
-    "political_date_note": "Eritrea independence from Ethiopia"
+    "political_date_note": "Independence from Ethiopia",
+    "political_source": "https://en.wikipedia.org/wiki/1993_Eritrean_independence_referendum"
   },
   {
     "country": "Estonia",
@@ -932,7 +986,8 @@
     "iso_a3": "EST",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR restored"
+    "political_date_note": "Independence from the USSR restored",
+    "political_source": "https://en.wikipedia.org/wiki/Estonian_restoration_of_Independence"
   },
   {
     "country": "Eswatini",
@@ -949,7 +1004,8 @@
     "iso_a3": "SWZ",
     "political_date": "1968-09-06",
     "political_date_raw": "6 Sep 1968",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Ethiopia",
@@ -966,7 +1022,8 @@
     "iso_a3": "ETH",
     "political_date": "1941-05-05",
     "political_date_raw": "5 May 1941",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Fiji",
@@ -983,7 +1040,8 @@
     "iso_a3": "FJI",
     "political_date": "1970-10-10",
     "political_date_raw": "10 Oct 1970",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Finland",
@@ -1000,7 +1058,8 @@
     "iso_a3": "FIN",
     "political_date": "1918-01-04",
     "political_date_raw": "4 Jan 1918",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "France",
@@ -1017,7 +1076,8 @@
     "iso_a3": "FRA",
     "political_date": "1958",
     "political_date_raw": "1958",
-    "political_date_note": "Fifth Republic established"
+    "political_date_note": "Fifth Republic established",
+    "political_source": "https://en.wikipedia.org/wiki/French_Fifth_Republic"
   },
   {
     "country": "Gabon",
@@ -1034,7 +1094,8 @@
     "iso_a3": "GAB",
     "political_date": "1960-08-17",
     "political_date_raw": "17 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Gambia",
@@ -1051,7 +1112,8 @@
     "iso_a3": "GMB",
     "political_date": "1965-02-18",
     "political_date_raw": "18 Feb 1965",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Georgia",
@@ -1068,7 +1130,8 @@
     "iso_a3": "GEO",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/1991_Georgian_independence_referendum"
   },
   {
     "country": "Germany",
@@ -1085,7 +1148,8 @@
     "iso_a3": "DEU",
     "political_date": "1990",
     "political_date_raw": "1990",
-    "political_date_note": "German reunification"
+    "political_date_note": "German reunification",
+    "political_source": "https://en.wikipedia.org/wiki/German_reunification"
   },
   {
     "country": "Greece",
@@ -1102,7 +1166,8 @@
     "iso_a3": "GRC",
     "political_date": "1974",
     "political_date_raw": "1974",
-    "political_date_note": "Restoration of democracy after military junta"
+    "political_date_note": "Restoration of democracy after the junta",
+    "political_source": "https://en.wikipedia.org/wiki/Metapolitefsi"
   },
   {
     "country": "Grenada",
@@ -1119,7 +1184,8 @@
     "iso_a3": "GRD",
     "political_date": "1974-02-07",
     "political_date_raw": "7 Feb 1974",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Ghana",
@@ -1136,7 +1202,8 @@
     "iso_a3": "GHA",
     "political_date": "1957-05-06",
     "political_date_raw": "6 May 1957",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Guatemala",
@@ -1153,7 +1220,8 @@
     "iso_a3": "GTM",
     "political_date": "1839-04-17",
     "political_date_raw": "17 Apr 1839",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Guinea",
@@ -1170,7 +1238,8 @@
     "iso_a3": "GIN",
     "political_date": "1958-10-02",
     "political_date_raw": "2 Oct 1958",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Guinea-Bissau",
@@ -1187,7 +1256,8 @@
     "iso_a3": "GNB",
     "political_date": "1974-09-10",
     "political_date_raw": "10 Sep 1974",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Guyana",
@@ -1204,7 +1274,8 @@
     "iso_a3": "GUY",
     "political_date": "1966-05-26",
     "political_date_raw": "26 May 1966",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Haiti",
@@ -1221,7 +1292,8 @@
     "iso_a3": "HTI",
     "political_date": "1804-01-01",
     "political_date_raw": "1 Jan 1804",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Honduras",
@@ -1238,7 +1310,8 @@
     "iso_a3": "HND",
     "political_date": "1924-05",
     "political_date_raw": "May 1924",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Hungary",
@@ -1255,7 +1328,8 @@
     "iso_a3": "HUN",
     "political_date": "1989",
     "political_date_raw": "1989",
-    "political_date_note": "End of communist rule, Third Republic"
+    "political_date_note": "End of communist rule, Third Republic",
+    "political_source": "https://en.wikipedia.org/wiki/End_of_communism_in_Hungary_(1989)"
   },
   {
     "country": "Iceland",
@@ -1272,7 +1346,8 @@
     "iso_a3": "ISL",
     "political_date": "1918-12-01",
     "political_date_raw": "1 Dec 1918",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "India",
@@ -1289,7 +1364,8 @@
     "iso_a3": "IND",
     "political_date": "1950",
     "political_date_raw": "1950",
-    "political_date_note": "Republic of India, constitution in force"
+    "political_date_note": "Republic of India, constitution in force",
+    "political_source": "https://en.wikipedia.org/wiki/Constitution_of_India"
   },
   {
     "country": "Indonesia",
@@ -1306,7 +1382,8 @@
     "iso_a3": "IDN",
     "political_date": "1949-12-27",
     "political_date_raw": "27 Dec 1949",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Iran",
@@ -1323,7 +1400,8 @@
     "iso_a3": "IRN",
     "political_date": "1979",
     "political_date_raw": "1979",
-    "political_date_note": "Islamic Revolution, Islamic Republic established"
+    "political_date_note": "Islamic Revolution, Islamic Republic established",
+    "political_source": "https://en.wikipedia.org/wiki/Iranian_revolution"
   },
   {
     "country": "Iraq",
@@ -1340,7 +1418,8 @@
     "iso_a3": "IRQ",
     "political_date": "2003-05-01",
     "political_date_raw": "1 May 2003",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Ireland",
@@ -1357,7 +1436,8 @@
     "iso_a3": "IRL",
     "political_date": "1931-12-11",
     "political_date_raw": "11 Dec 1931",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Israel",
@@ -1374,7 +1454,8 @@
     "iso_a3": "ISR",
     "political_date": "1948",
     "political_date_raw": "1948",
-    "political_date_note": "State of Israel proclaimed"
+    "political_date_note": "State of Israel proclaimed",
+    "political_source": "https://en.wikipedia.org/wiki/Israeli_Declaration_of_Independence"
   },
   {
     "country": "Italy",
@@ -1391,7 +1472,8 @@
     "iso_a3": "ITA",
     "political_date": "1948",
     "political_date_raw": "1948",
-    "political_date_note": "Italian Republic, post-WWII constitution"
+    "political_date_note": "Republican constitution in force",
+    "political_source": "https://en.wikipedia.org/wiki/Constitution_of_Italy"
   },
   {
     "country": "Ivory Coast",
@@ -1408,7 +1490,8 @@
     "iso_a3": "CIV",
     "political_date": "1960-08-07",
     "political_date_raw": "7 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Jamaica",
@@ -1425,7 +1508,8 @@
     "iso_a3": "JAM",
     "political_date": "1962-08-06",
     "political_date_raw": "6 Aug 1962",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Japan",
@@ -1442,7 +1526,8 @@
     "iso_a3": "JPN",
     "political_date": "1947",
     "political_date_raw": "1947",
-    "political_date_note": "Post-war constitution in force"
+    "political_date_note": "Post-war constitution in force",
+    "political_source": "https://en.wikipedia.org/wiki/Constitution_of_Japan"
   },
   {
     "country": "Jordan",
@@ -1459,7 +1544,8 @@
     "iso_a3": "JOR",
     "political_date": "1958-08-02",
     "political_date_raw": "2 Aug 1958",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Kazakhstan",
@@ -1476,7 +1562,8 @@
     "iso_a3": "KAZ",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
     "country": "Kenya",
@@ -1493,7 +1580,8 @@
     "iso_a3": "KEN",
     "political_date": "1963-12-12",
     "political_date_raw": "12 Dec 1963",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Kiribati",
@@ -1510,7 +1598,8 @@
     "iso_a3": "KIR",
     "political_date": "1979-07-12",
     "political_date_raw": "12 July 1979",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "North Korea",
@@ -1527,7 +1616,8 @@
     "iso_a3": "PRK",
     "political_date": "1948",
     "political_date_raw": "1948",
-    "political_date_note": "Democratic People's Republic of Korea founded"
+    "political_date_note": "Democratic People's Republic of Korea founded",
+    "political_source": "https://en.wikipedia.org/wiki/History_of_North_Korea"
   },
   {
     "country": "South Korea",
@@ -1544,7 +1634,8 @@
     "iso_a3": "KOR",
     "political_date": "1987",
     "political_date_raw": "1987",
-    "political_date_note": "Sixth Republic, democratic constitution"
+    "political_date_note": "Sixth Republic, democratic constitution",
+    "political_source": "https://en.wikipedia.org/wiki/Sixth_Republic_of_Korea"
   },
   {
     "country": "Kosovo",
@@ -1561,7 +1652,8 @@
     "iso_a3": "KOS",
     "political_date": "2008",
     "political_date_raw": "2008",
-    "political_date_note": "Independence from Serbia"
+    "political_date_note": "Declaration of independence from Serbia",
+    "political_source": "https://en.wikipedia.org/wiki/2008_Kosovo_declaration_of_independence"
   },
   {
     "country": "Kuwait",
@@ -1578,7 +1670,8 @@
     "iso_a3": "KWT",
     "political_date": "1991-02",
     "political_date_raw": "Feb 1991",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Kyrgyzstan",
@@ -1595,7 +1688,8 @@
     "iso_a3": "KGZ",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
     "country": "Laos",
@@ -1612,7 +1706,8 @@
     "iso_a3": "LAO",
     "political_date": "1975",
     "political_date_raw": "1975",
-    "political_date_note": "Pathet Lao takeover, Lao PDR established"
+    "political_date_note": "Pathet Lao takeover, Lao PDR established",
+    "political_source": "https://en.wikipedia.org/wiki/Laotian_Civil_War"
   },
   {
     "country": "Latvia",
@@ -1629,7 +1724,8 @@
     "iso_a3": "LVA",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR restored"
+    "political_date_note": "Independence from the USSR restored",
+    "political_source": "https://en.wikipedia.org/wiki/On_the_Restoration_of_Independence_of_the_Republic_of_Latvia"
   },
   {
     "country": "Lebanon",
@@ -1646,7 +1742,8 @@
     "iso_a3": "LBN",
     "political_date": "1946-12-31",
     "political_date_raw": "31 Dec 1946",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Lesotho",
@@ -1663,7 +1760,8 @@
     "iso_a3": "LSO",
     "political_date": "1966-10-04",
     "political_date_raw": "4 Oct 1966",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Liberia",
@@ -1680,7 +1778,8 @@
     "iso_a3": "LBR",
     "political_date": "2006",
     "political_date_raw": "2006",
-    "political_date_note": "Ellen Johnson Sirleaf, post-civil war democracy"
+    "political_date_note": "Post-civil-war elected government takes office",
+    "political_source": "https://en.wikipedia.org/wiki/2005_Liberian_general_election"
   },
   {
     "country": "Libya",
@@ -1697,7 +1796,8 @@
     "iso_a3": "LBY",
     "political_date": "2011",
     "political_date_raw": "2011",
-    "political_date_note": "End of Gaddafi regime"
+    "political_date_note": "Fall of the Gaddafi regime",
+    "political_source": "https://en.wikipedia.org/wiki/Libyan_civil_war_(2011)"
   },
   {
     "country": "Liechtenstein",
@@ -1714,7 +1814,8 @@
     "iso_a3": "LIE",
     "political_date": "1806-08-06",
     "political_date_raw": "6 August 1806",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Lithuania",
@@ -1731,7 +1832,8 @@
     "iso_a3": "LTU",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR restored"
+    "political_date_note": "Independence from the USSR restored",
+    "political_source": "https://en.wikipedia.org/wiki/Act_of_the_Re-Establishment_of_the_State_of_Lithuania"
   },
   {
     "country": "Luxembourg",
@@ -1748,7 +1850,8 @@
     "iso_a3": "LUX",
     "political_date": "1945",
     "political_date_raw": "1945",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Madagascar",
@@ -1765,7 +1868,8 @@
     "iso_a3": "MDG",
     "political_date": "1960-06-26",
     "political_date_raw": "26 June 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Malawi",
@@ -1782,7 +1886,8 @@
     "iso_a3": "MWI",
     "political_date": "1964-07-06",
     "political_date_raw": "6 July 1964",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Malaysia",
@@ -1799,7 +1904,8 @@
     "iso_a3": "MYS",
     "political_date": "1957-08-31",
     "political_date_raw": "31 Aug 1957",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Maldives",
@@ -1816,7 +1922,8 @@
     "iso_a3": "MDV",
     "political_date": "1965-07-26",
     "political_date_raw": "26 July 1965",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Mali",
@@ -1833,7 +1940,8 @@
     "iso_a3": "MLI",
     "political_date": "1960-08-20",
     "political_date_raw": "20 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Malta",
@@ -1850,7 +1958,8 @@
     "iso_a3": "MLT",
     "political_date": "1964-09-21",
     "political_date_raw": "21 Sep 1964",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Marshall Islands",
@@ -1867,7 +1976,8 @@
     "iso_a3": "MHL",
     "political_date": "1986-10-21",
     "political_date_raw": "21 Oct 1986",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Mauritania",
@@ -1884,7 +1994,8 @@
     "iso_a3": "MRT",
     "political_date": "1960-11-28",
     "political_date_raw": "28 Nov 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Mauritius",
@@ -1901,7 +2012,8 @@
     "iso_a3": "MUS",
     "political_date": "1968-03-12",
     "political_date_raw": "12 Mar 1968",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Mexico",
@@ -1918,7 +2030,8 @@
     "iso_a3": "MEX",
     "political_date": "1864",
     "political_date_raw": "1864",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Micronesia, Federated States of",
@@ -1935,7 +2048,8 @@
     "iso_a3": "FSM",
     "political_date": "1986-11-03",
     "political_date_raw": "3 Nov 1986",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Moldova",
@@ -1952,7 +2066,8 @@
     "iso_a3": "MDA",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Moldova"
   },
   {
     "country": "Monaco",
@@ -1969,7 +2084,8 @@
     "iso_a3": "MCO",
     "political_date": "1945",
     "political_date_raw": "1945",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Mongolia",
@@ -1986,7 +2102,8 @@
     "iso_a3": "MNG",
     "political_date": "1921-03-13",
     "political_date_raw": "13 Mar 1921",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Montenegro",
@@ -2003,7 +2120,8 @@
     "iso_a3": "MNE",
     "political_date": "2006",
     "political_date_raw": "2006",
-    "political_date_note": "Montenegro independence"
+    "political_date_note": "Independence from Serbia and Montenegro",
+    "political_source": "https://en.wikipedia.org/wiki/2006_Montenegrin_independence_referendum"
   },
   {
     "country": "Morocco",
@@ -2020,7 +2138,8 @@
     "iso_a3": "MAR",
     "political_date": "1956-04-07",
     "political_date_raw": "7 Apr 1956",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Mozambique",
@@ -2037,7 +2156,8 @@
     "iso_a3": "MOZ",
     "political_date": "1994",
     "political_date_raw": "1994",
-    "political_date_note": "First multiparty elections after civil war"
+    "political_date_note": "First multiparty elections after the civil war",
+    "political_source": "https://en.wikipedia.org/wiki/1994_Mozambican_general_election"
   },
   {
     "country": "Myanmar",
@@ -2052,9 +2172,10 @@
     "notes": "2008–present: Republic of the Union of Myanmar 1988-2008: Union of Myanmar 1962-1988: Socialist Republic of the Union of Burma 1948-1962: Union of Burma",
     "capital": "Naypyidaw",
     "iso_a3": "MMR",
-    "political_date": "2011",
-    "political_date_raw": "2011",
-    "political_date_note": "Transition from military junta to quasi-civilian government"
+    "political_date": "2021",
+    "political_date_raw": "2021",
+    "political_date_note": "Military coup ends civilian government",
+    "political_source": "https://en.wikipedia.org/wiki/2021_Myanmar_coup_d'état"
   },
   {
     "country": "Namibia",
@@ -2071,7 +2192,8 @@
     "iso_a3": "NAM",
     "political_date": "1990",
     "political_date_raw": "1990",
-    "political_date_note": "Independence from South Africa"
+    "political_date_note": "Independence from South Africa",
+    "political_source": "https://en.wikipedia.org/wiki/Namibian_War_of_Independence"
   },
   {
     "country": "Nauru",
@@ -2088,7 +2210,8 @@
     "iso_a3": "NRU",
     "political_date": "1968-01-31",
     "political_date_raw": "31 Jan 1968",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Nepal",
@@ -2105,7 +2228,8 @@
     "iso_a3": "NPL",
     "political_date": "1559",
     "political_date_raw": "1559",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Netherlands",
@@ -2122,7 +2246,8 @@
     "iso_a3": "NLD",
     "political_date": "1945",
     "political_date_raw": "1945",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "New Zealand",
@@ -2139,7 +2264,8 @@
     "iso_a3": "NZL",
     "political_date": "1947-11-25",
     "political_date_raw": "25 Nov 1947",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Nicaragua",
@@ -2156,7 +2282,8 @@
     "iso_a3": "NIC",
     "political_date": "1933-01-02",
     "political_date_raw": "2 Jan 1933",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Niger",
@@ -2173,7 +2300,8 @@
     "iso_a3": "NER",
     "political_date": "1960-08-07",
     "political_date_raw": "7 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Nigeria",
@@ -2190,7 +2318,8 @@
     "iso_a3": "NGA",
     "political_date": "1960-10-01",
     "political_date_raw": "1 Oct 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "North Macedonia",
@@ -2207,7 +2336,8 @@
     "iso_a3": "MKD",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from Yugoslavia"
+    "political_date_note": "Independence from Yugoslavia",
+    "political_source": "https://en.wikipedia.org/wiki/1991_Macedonian_independence_referendum"
   },
   {
     "country": "Norway",
@@ -2224,7 +2354,8 @@
     "iso_a3": "NOR",
     "political_date": "1945-05-08",
     "political_date_raw": "8 May 1945",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Oman",
@@ -2241,7 +2372,8 @@
     "iso_a3": "OMN",
     "political_date": "1976",
     "political_date_raw": "1976",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Pakistan",
@@ -2258,7 +2390,8 @@
     "iso_a3": "PAK",
     "political_date": "1947",
     "political_date_raw": "1947",
-    "political_date_note": "Independence from Britain"
+    "political_date_note": "Independence and partition of British India",
+    "political_source": "https://en.wikipedia.org/wiki/Partition_of_India"
   },
   {
     "country": "Palau",
@@ -2275,7 +2408,8 @@
     "iso_a3": "PLW",
     "political_date": "1994-10-01",
     "political_date_raw": "1 Oct 1994",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Palestine",
@@ -2292,7 +2426,8 @@
     "iso_a3": "PSX",
     "political_date": "1988-11-15",
     "political_date_raw": "15 Nov 1988",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Panama",
@@ -2309,7 +2444,8 @@
     "iso_a3": "PAN",
     "political_date": "1990-01-31",
     "political_date_raw": "31 Jan 1990",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Papua New Guinea",
@@ -2326,7 +2462,8 @@
     "iso_a3": "PNG",
     "political_date": "1975-09-16",
     "political_date_raw": "16 Sep 1975",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Paraguay",
@@ -2343,7 +2480,8 @@
     "iso_a3": "PRY",
     "political_date": "1876",
     "political_date_raw": "1876",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Peru",
@@ -2360,7 +2498,8 @@
     "iso_a3": "PER",
     "political_date": "1839-08-25",
     "political_date_raw": "25 Aug 1839",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Philippines",
@@ -2377,7 +2516,8 @@
     "iso_a3": "PHL",
     "political_date": "1946-07-04",
     "political_date_raw": "4 July 1946",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Poland",
@@ -2394,7 +2534,8 @@
     "iso_a3": "POL",
     "political_date": "1989",
     "political_date_raw": "1989",
-    "political_date_note": "End of communist rule, Third Polish Republic"
+    "political_date_note": "End of communist rule, Third Polish Republic",
+    "political_source": "https://en.wikipedia.org/wiki/History_of_Poland_(1989–present)"
   },
   {
     "country": "Portugal",
@@ -2411,7 +2552,8 @@
     "iso_a3": "PRT",
     "political_date": "1976",
     "political_date_raw": "1976",
-    "political_date_note": "Constitution after Carnation Revolution"
+    "political_date_note": "Constitution after the Carnation Revolution",
+    "political_source": "https://en.wikipedia.org/wiki/Constitution_of_Portugal"
   },
   {
     "country": "Qatar",
@@ -2428,7 +2570,8 @@
     "iso_a3": "QAT",
     "political_date": "1971-09-03",
     "political_date_raw": "3 Sep 1971",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Romania",
@@ -2445,7 +2588,8 @@
     "iso_a3": "ROU",
     "political_date": "1989",
     "political_date_raw": "1989",
-    "political_date_note": "Revolution, end of communist dictatorship"
+    "political_date_note": "Revolution ends communist dictatorship",
+    "political_source": "https://en.wikipedia.org/wiki/Romanian_revolution"
   },
   {
     "country": "Russia",
@@ -2462,7 +2606,8 @@
     "iso_a3": "RUS",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Russian Federation after dissolution of USSR"
+    "political_date_note": "Russian Federation succeeds the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
     "country": "Rwanda",
@@ -2479,7 +2624,8 @@
     "iso_a3": "RWA",
     "political_date": "1994",
     "political_date_raw": "1994",
-    "political_date_note": "RPF government after genocide"
+    "political_date_note": "RPF government after the genocide",
+    "political_source": "https://en.wikipedia.org/wiki/Rwandan_Civil_War"
   },
   {
     "country": "Saint Kitts and Nevis",
@@ -2496,7 +2642,8 @@
     "iso_a3": "KNA",
     "political_date": "1983-09-19",
     "political_date_raw": "19 Sep 1983",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Saint Lucia",
@@ -2513,7 +2660,8 @@
     "iso_a3": "LCA",
     "political_date": "1979-02-22",
     "political_date_raw": "22 Feb 1979",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Saint Vincent and the Grenadines",
@@ -2530,7 +2678,8 @@
     "iso_a3": "VCT",
     "political_date": "1979-10-27",
     "political_date_raw": "27 Oct 1979",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Samoa",
@@ -2547,7 +2696,8 @@
     "iso_a3": "WSM",
     "political_date": "1962-01-01",
     "political_date_raw": "1 Jan 1962",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "San Marino",
@@ -2564,7 +2714,8 @@
     "iso_a3": "SMR",
     "political_date": "1944-09-21",
     "political_date_raw": "21 Sep 1944",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "São Tomé and Príncipe",
@@ -2581,7 +2732,8 @@
     "iso_a3": "STP",
     "political_date": "1975-07-12",
     "political_date_raw": "12 July 1975",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Saudi Arabia",
@@ -2598,7 +2750,8 @@
     "iso_a3": "SAU",
     "political_date": "1932-09-23",
     "political_date_raw": "23 Sep 1932",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Senegal",
@@ -2615,7 +2768,8 @@
     "iso_a3": "SEN",
     "political_date": "1960-08-20",
     "political_date_raw": "20 Aug 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Serbia",
@@ -2632,7 +2786,8 @@
     "iso_a3": "SRB",
     "political_date": "2006",
     "political_date_raw": "2006",
-    "political_date_note": "Independence, Republic of Serbia"
+    "political_date_note": "Republic of Serbia after Montenegro's secession",
+    "political_source": "https://en.wikipedia.org/wiki/Serbia_and_Montenegro"
   },
   {
     "country": "Seychelles",
@@ -2649,7 +2804,8 @@
     "iso_a3": "SYC",
     "political_date": "1976-06-29",
     "political_date_raw": "29 June 1976",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Sierra Leone",
@@ -2666,7 +2822,8 @@
     "iso_a3": "SLE",
     "political_date": "1996",
     "political_date_raw": "1996",
-    "political_date_note": "Return to civilian rule after military junta"
+    "political_date_note": "Return to civilian rule",
+    "political_source": "https://en.wikipedia.org/wiki/1996_Sierra_Leonean_general_election"
   },
   {
     "country": "Singapore",
@@ -2683,7 +2840,8 @@
     "iso_a3": "SGP",
     "political_date": "1965-08-09",
     "political_date_raw": "9 Aug 1965",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Slovakia",
@@ -2700,7 +2858,8 @@
     "iso_a3": "SVK",
     "political_date": "1993",
     "political_date_raw": "1993",
-    "political_date_note": "Slovak Republic formed (dissolution of Czechoslovakia)"
+    "political_date_note": "Slovak Republic formed on dissolution of Czechoslovakia",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_Czechoslovakia"
   },
   {
     "country": "Slovenia",
@@ -2717,7 +2876,8 @@
     "iso_a3": "SVN",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from Yugoslavia"
+    "political_date_note": "Independence from Yugoslavia",
+    "political_source": "https://en.wikipedia.org/wiki/Ten-Day_War"
   },
   {
     "country": "Solomon Islands",
@@ -2734,7 +2894,8 @@
     "iso_a3": "SLB",
     "political_date": "1978-07-07",
     "political_date_raw": "7 July 1978",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Somalia",
@@ -2751,7 +2912,8 @@
     "iso_a3": "SOM",
     "political_date": "2012",
     "political_date_raw": "2012",
-    "political_date_note": "Federal Government of Somalia established"
+    "political_date_note": "Federal Government of Somalia established",
+    "political_source": "https://en.wikipedia.org/wiki/Federal_Government_of_Somalia"
   },
   {
     "country": "South Africa",
@@ -2768,7 +2930,8 @@
     "iso_a3": "ZAF",
     "political_date": "1994",
     "political_date_raw": "1994",
-    "political_date_note": "End of apartheid, first free elections"
+    "political_date_note": "End of apartheid, first universal elections",
+    "political_source": "https://en.wikipedia.org/wiki/1994_South_African_general_election"
   },
   {
     "country": "South Sudan",
@@ -2785,7 +2948,8 @@
     "iso_a3": "SDS",
     "political_date": "2011",
     "political_date_raw": "2011",
-    "political_date_note": "South Sudan independence"
+    "political_date_note": "Independence from Sudan",
+    "political_source": "https://en.wikipedia.org/wiki/2011_South_Sudanese_independence_referendum"
   },
   {
     "country": "Spain",
@@ -2802,7 +2966,8 @@
     "iso_a3": "ESP",
     "political_date": "1978",
     "political_date_raw": "1978",
-    "political_date_note": "Constitution after Franco dictatorship"
+    "political_date_note": "Democratic constitution after Franco",
+    "political_source": "https://en.wikipedia.org/wiki/Spanish_Constitution_of_1978"
   },
   {
     "country": "Sri Lanka",
@@ -2819,7 +2984,8 @@
     "iso_a3": "LKA",
     "political_date": "1948-02-04",
     "political_date_raw": "4 Feb 1948",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Sudan",
@@ -2836,7 +3002,8 @@
     "iso_a3": "SDN",
     "political_date": "1956-01-01",
     "political_date_raw": "1 Jan 1956",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Suriname",
@@ -2853,7 +3020,8 @@
     "iso_a3": "SUR",
     "political_date": "1975-11-25",
     "political_date_raw": "25 Nov 1975",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Sweden",
@@ -2870,7 +3038,8 @@
     "iso_a3": "SWE",
     "political_date": "1523",
     "political_date_raw": "1523",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Switzerland",
@@ -2887,7 +3056,8 @@
     "iso_a3": "CHE",
     "political_date": "1814",
     "political_date_raw": "1814",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Syria",
@@ -2902,9 +3072,10 @@
     "notes": "2024–present: Syrian Arab Republic (post- Fall of Assad regime ) 1963-2024: Syrian Arab Republic, under the Assad regime 1961–1963: Syrian Arab Republic",
     "capital": "Damascus",
     "iso_a3": "SYR",
-    "political_date": "1961-09-28",
-    "political_date_raw": "28 Sep 1961",
-    "political_date_note": ""
+    "political_date": "2024",
+    "political_date_raw": "2024",
+    "political_date_note": "Fall of the Assad regime",
+    "political_source": "https://en.wikipedia.org/wiki/Fall_of_the_Assad_regime"
   },
   {
     "country": "Tajikistan",
@@ -2921,7 +3092,8 @@
     "iso_a3": "TJK",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
     "country": "Tanzania",
@@ -2938,7 +3110,8 @@
     "iso_a3": "TZA",
     "political_date": "1964-04-26",
     "political_date_raw": "26 April 1964",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Thailand",
@@ -2955,7 +3128,8 @@
     "iso_a3": "THA",
     "political_date": "1945",
     "political_date_raw": "1945",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Timor-Leste",
@@ -2972,7 +3146,8 @@
     "iso_a3": "TLS",
     "political_date": "2002",
     "political_date_raw": "2002",
-    "political_date_note": "East Timor independence"
+    "political_date_note": "Independence restored",
+    "political_source": "https://en.wikipedia.org/wiki/History_of_East_Timor"
   },
   {
     "country": "Togo",
@@ -2989,7 +3164,8 @@
     "iso_a3": "TGO",
     "political_date": "1960-04-27",
     "political_date_raw": "27 Apr 1960",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Tonga",
@@ -3006,7 +3182,8 @@
     "iso_a3": "TON",
     "political_date": "1970-06-04",
     "political_date_raw": "4 June 1970",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Trinidad and Tobago",
@@ -3023,7 +3200,8 @@
     "iso_a3": "TTO",
     "political_date": "1962-08-31",
     "political_date_raw": "31 Aug 1962",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Tunisia",
@@ -3040,7 +3218,8 @@
     "iso_a3": "TUN",
     "political_date": "1956-03-20",
     "political_date_raw": "20 Mar 1956",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Turkey",
@@ -3057,7 +3236,8 @@
     "iso_a3": "TUR",
     "political_date": "1923",
     "political_date_raw": "1923",
-    "political_date_note": "Republic of Turkey founded"
+    "political_date_note": "Republic of Turkey proclaimed",
+    "political_source": "https://en.wikipedia.org/wiki/History_of_the_Republic_of_Turkey"
   },
   {
     "country": "Turkmenistan",
@@ -3074,7 +3254,8 @@
     "iso_a3": "TKM",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
     "country": "Tuvalu",
@@ -3091,7 +3272,8 @@
     "iso_a3": "TUV",
     "political_date": "1978-10-01",
     "political_date_raw": "1 Oct 1978",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Uganda",
@@ -3108,7 +3290,8 @@
     "iso_a3": "UGA",
     "political_date": "1962-10-09",
     "political_date_raw": "9 Oct 1962",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Ukraine",
@@ -3125,7 +3308,8 @@
     "iso_a3": "UKR",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Declaration_of_Independence_of_Ukraine"
   },
   {
     "country": "United Arab Emirates",
@@ -3142,7 +3326,8 @@
     "iso_a3": "ARE",
     "political_date": "1971-12-02",
     "political_date_raw": "2 Dec 1971",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "United Kingdom",
@@ -3159,7 +3344,8 @@
     "iso_a3": "GBR",
     "political_date": "1801-01-01",
     "political_date_raw": "1 Jan 1801",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "United States",
@@ -3176,7 +3362,8 @@
     "iso_a3": "USA",
     "political_date": "1781-10-19",
     "political_date_raw": "19 Oct 1781",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Uruguay",
@@ -3193,7 +3380,8 @@
     "iso_a3": "URY",
     "political_date": "1828-08-27",
     "political_date_raw": "27 Aug 1828",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Uzbekistan",
@@ -3210,7 +3398,8 @@
     "iso_a3": "UZB",
     "political_date": "1991",
     "political_date_raw": "1991",
-    "political_date_note": "Independence from USSR"
+    "political_date_note": "Independence from the USSR",
+    "political_source": "https://en.wikipedia.org/wiki/Dissolution_of_the_Soviet_Union"
   },
   {
     "country": "Vanuatu",
@@ -3227,7 +3416,8 @@
     "iso_a3": "VUT",
     "political_date": "1980-07-30",
     "political_date_raw": "30 July 1980",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Vatican City",
@@ -3244,7 +3434,8 @@
     "iso_a3": "VAT",
     "political_date": "1929-02-11",
     "political_date_raw": "11 Feb 1929",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Venezuela",
@@ -3261,7 +3452,8 @@
     "iso_a3": "VEN",
     "political_date": "1830-01-13",
     "political_date_raw": "13 Jan 1830",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Vietnam",
@@ -3278,7 +3470,8 @@
     "iso_a3": "VNM",
     "political_date": "1975",
     "political_date_raw": "1975",
-    "political_date_note": "Reunification under communist government"
+    "political_date_note": "Fall of Saigon, reunification under communist rule",
+    "political_source": "https://en.wikipedia.org/wiki/Fall_of_Saigon"
   },
   {
     "country": "Yemen",
@@ -3295,7 +3488,8 @@
     "iso_a3": "YEM",
     "political_date": "1990",
     "political_date_raw": "1990",
-    "political_date_note": "Unification of North and South Yemen"
+    "political_date_note": "Unification of North and South Yemen",
+    "political_source": "https://en.wikipedia.org/wiki/Yemeni_unification"
   },
   {
     "country": "Zambia",
@@ -3312,7 +3506,8 @@
     "iso_a3": "ZMB",
     "political_date": "1964-10-24",
     "political_date_raw": "24 Oct 1964",
-    "political_date_note": ""
+    "political_date_note": "",
+    "political_source": "https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation"
   },
   {
     "country": "Zimbabwe",
@@ -3329,6 +3524,29 @@
     "iso_a3": "ZWE",
     "political_date": "1980",
     "political_date_raw": "1980",
-    "political_date_note": "Independence from Rhodesia / Zimbabwe"
+    "political_date_note": "Independence as Zimbabwe",
+    "political_source": "https://en.wikipedia.org/wiki/Lancaster_House_Agreement"
+  },
+  {
+    "country": "Taiwan",
+    "continent": "Asia",
+    "sovereignty_date": "1912-01-01",
+    "sovereignty_date_precision": "full",
+    "sovereignty_date_raw": "1 January 1912",
+    "last_subordination_date": "1945-10-25",
+    "last_subordination_date_precision": "full",
+    "last_subordination_date_raw": "25 October 1945",
+    "previous_power": "Japan",
+    "notes": "1912–present: Republic of China (governing Taiwan since 1945, based in Taipei since 1949). 1895–1945: Japanese rule of Taiwan.",
+    "capital": "Taipei",
+    "iso_a3": "TWN",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Republic_of_China_(1912–1949)",
+      "https://en.wikipedia.org/wiki/Retrocession_Day"
+    ],
+    "political_date": "1947",
+    "political_date_raw": "1947",
+    "political_date_note": "Republic of China constitution (in force in Taiwan since 1949)",
+    "political_source": "https://en.wikipedia.org/wiki/Constitution_of_the_Republic_of_China"
   }
 ]

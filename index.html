@@ -3,47 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Country Age Map</title>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-  <link rel="stylesheet" href="style.css"/>
+  <title>Country Age Map — how old is every country?</title>
+  <meta name="description" content="An interactive world map that shows which countries are older or younger than any country you pick, under three definitions of when a country's clock starts. Sourced, exportable, shareable.">
+  <meta property="og:title" content="Country Age Map">
+  <meta property="og:description" content="Which countries are older than yours? Compare every state by first sovereignty, last liberation, or current regime.">
+  <meta property="og:image" content="https://gom00n.github.io/CountriesAge/docs/example.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#0b1424">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-  <div id="topbar">
-    <div id="search-wrap">
-      <input type="text" id="search-input" placeholder="Search country…" autocomplete="off"/>
-      <ul id="search-dropdown"></ul>
-    </div>
 
-    <div id="controls">
-      <div class="ctrl-group">
-        <label>Mode</label>
-        <div class="btn-group">
-          <button id="btn-simple" onclick="setMode('simple')">Simple</button>
-          <button id="btn-detailed" class="active" onclick="setMode('detailed')">Detailed</button>
-        </div>
+<header id="topbar">
+  <a class="brand" href="./" title="Reset">
+    <span class="brand-mark" aria-hidden="true"></span>
+    <span class="brand-text">Country Age Map</span>
+  </a>
+
+  <div id="search-wrap">
+    <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+    <input type="text" id="search-input" placeholder="Pick a country to compare against…" autocomplete="off" spellcheck="false" aria-label="Search country">
+    <button id="search-clear" title="Clear selection" aria-label="Clear selection" hidden>&times;</button>
+    <ul id="search-dropdown" role="listbox"></ul>
+  </div>
+
+  <div id="controls">
+    <div class="ctrl-group" role="group" aria-label="Date type">
+      <span class="ctrl-label">Clock starts at</span>
+      <div class="seg" id="seg-type">
+        <button data-type="sovereignty" title="When the state first became sovereign">First sovereignty</button>
+        <button data-type="freed" title="When it last gained or regained sovereignty from a foreign power">Last freed</button>
+        <button data-type="regime" class="active" title="When the current political system was established">Current regime</button>
       </div>
-      <div class="ctrl-group">
-        <label>Date type</label>
-        <div class="btn-group">
-          <button id="btn-sov" onclick="setDateType('sovereignty')">First sovereignty</button>
-          <button id="btn-sub" onclick="setDateType('subordination')">Last freed
-            <span class="info-icon" title="The date the country last gained or regained sovereignty from a foreign power (e.g. after occupation or colonial rule). Does not reflect internal revolutions.">i</span>
-          </button>
-          <button id="btn-pol" class="active" onclick="setDateType('political')">Current regime
-            <span class="info-icon" title="When the current political system was established — capturing revolutions, democratisation, and major regime changes (e.g. Iran 1979, Poland 1989).">i</span>
-          </button>
-        </div>
+    </div>
+    <div class="ctrl-group" role="group" aria-label="Detail">
+      <div class="seg" id="seg-mode">
+        <button data-mode="simple">Simple</button>
+        <button data-mode="detailed" class="active">Detailed</button>
       </div>
     </div>
   </div>
 
-  <div id="map"></div>
+  <div id="actions">
+    <button id="btn-copy" class="btn" title="Copy a link to this exact view">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7L12.5 19.5"/></svg>
+      <span>Copy link</span>
+    </button>
+    <button id="btn-image" class="btn" title="Copy the map as an image">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-8 8"/></svg>
+      <span>Copy image</span>
+    </button>
+    <button id="btn-export" class="btn primary" title="Download a high-resolution PNG of this view">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M4 19h16"/></svg>
+      <span>Download PNG</span>
+    </button>
+    <button id="btn-about" class="btn ghost" title="Sources, definitions and caveats">Sources</button>
+  </div>
+</header>
 
-  <div id="infobox" class="hidden"></div>
-  <div id="legend"></div>
-  <div id="tooltip" class="hidden"></div>
+<main id="stage">
+  <canvas id="map" aria-hidden="true"></canvas>
+  <canvas id="overlay" aria-label="World map" tabindex="0"></canvas>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="app.js"></script>
+  <div id="headline">
+    <h1 id="hl-title">How old is every country?</h1>
+    <p id="hl-sub">Coloured by age of the current regime. Click a country to compare everything against it.</p>
+  </div>
+
+  <div id="zoomctl">
+    <button id="zoom-in" title="Zoom in" aria-label="Zoom in">+</button>
+    <button id="zoom-out" title="Zoom out" aria-label="Zoom out">−</button>
+    <button id="zoom-reset" title="Reset view" aria-label="Reset view">⌂</button>
+  </div>
+
+  <aside id="infobox" class="hidden" aria-live="polite"></aside>
+  <aside id="legend"></aside>
+  <div id="tooltip" class="hidden" role="status"></div>
+  <div id="credit">Source: Wikipedia · Natural Earth &nbsp;·&nbsp; <span id="credit-url"></span></div>
+</main>
+
+<div id="toast" hidden></div>
+
+<dialog id="about">
+  <div class="about-head">
+    <h2>Sources &amp; method</h2>
+    <button class="btn ghost" id="about-close" aria-label="Close">Close</button>
+  </div>
+  <div class="about-body">
+    <p class="lede">Every country is dated three ways. Pick the clock that matches your argument; the map re-colours instantly and the legend and export say which clock was used.</p>
+
+    <h3>The three clocks</h3>
+    <dl class="defs">
+      <dt>First sovereignty</dt>
+      <dd>The earliest date the state became a sovereign entity, as listed on Wikipedia. For old states this is often a founding dynasty or unification (Denmark 714, Japan 539, France 843). Fuzzy by nature.</dd>
+      <dt>Last freed</dt>
+      <dd>The date the state last gained or regained sovereignty from a foreign power, such as decolonisation, the end of an occupation, or secession. Internal revolutions do not count.</dd>
+      <dt>Current regime</dt>
+      <dd>When the political system in place today was established: a revolution, a new constitution, reunification, the end of a dictatorship. Hand-curated for 67 states with a linked source each; every other state falls back to its "last freed" date.</dd>
+    </dl>
+
+    <h3>Where the data comes from</h3>
+    <ul class="srcs">
+      <li><a href="https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation" target="_blank" rel="noopener">List of modern sovereign states by date of formation</a> (Wikipedia). Gives first sovereignty, last subordination, previous power, capital and continent for 196 states. Scraped 9 April 2026. Text is CC BY-SA 4.0.</li>
+      <li>Regime dates: individual Wikipedia articles on each event, linked from the country panel. Curated in <code>add_political_date.py</code> in the repository, reviewed 18 September 2026.</li>
+      <li>Taiwan is missing from the Wikipedia list and was added by hand (<code>add_extras.py</code>), sourced to the articles on the Republic of China and Retrocession Day.</li>
+      <li>Boundaries: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> 1:50m admin-0 countries, public domain.</li>
+    </ul>
+
+    <h3>How the map is coloured</h3>
+    <ul class="srcs">
+      <li>Dependent territories such as Greenland, Puerto Rico or New Caledonia take their sovereign's colour with a hatch, and are labelled as territories on hover. They are not counted as countries.</li>
+      <li>Disputed or unrecognised areas (Western Sahara, Somaliland, Northern Cyprus, Siachen) are hatched grey. Kosovo, Palestine and Taiwan are included as entries.</li>
+      <li>Ages are computed from the year only, against the current year. A country founded in 1948 reads as the same age all year.</li>
+      <li>Small islands get a dot so they remain visible at world scale; zoom in to see their outlines.</li>
+    </ul>
+
+    <h3>Caveats</h3>
+    <p>"How old is a country" has no single right answer, which is exactly why there are three clocks. Founding dates for old states are conventions, not facts. Regime dates involve judgement: coups that replaced one junta with another were mostly not counted, and the curated list is biased toward well-documented cases. Corrections are welcome as issues or pull requests on <a id="about-repo" href="https://github.com/gom00n/CountriesAge" target="_blank" rel="noopener">GitHub</a>.</p>
+
+    <h3>Reusing this</h3>
+    <p>Code is MIT. Exported images carry a source line; please keep it. Data derived from Wikipedia is CC BY-SA 4.0.</p>
+  </div>
+</dialog>
+
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="app.js?v=2"></script>
 </body>
 </html>
