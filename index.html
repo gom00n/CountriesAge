@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=2">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
@@ -102,21 +102,27 @@
       <dt>Last freed</dt>
       <dd>The date the state last gained or regained sovereignty from a foreign power, such as decolonisation, the end of an occupation, or secession. Internal revolutions do not count.</dd>
       <dt>Current regime</dt>
-      <dd>When the political system in place today was established: a revolution, a new constitution, reunification, the end of a dictatorship. Hand-curated for 67 states with a linked source each; every other state falls back to its "last freed" date.</dd>
+      <dd>When the political system in place today was established: a revolution, a new constitution, reunification, the end of a dictatorship. Hand-curated for 71 states with a linked source each; every other state falls back to its "last freed" date.</dd>
     </dl>
 
     <h3>Where the data comes from</h3>
     <ul class="srcs">
       <li><a href="https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation" target="_blank" rel="noopener">List of modern sovereign states by date of formation</a> (Wikipedia). Gives first sovereignty, last subordination, previous power, capital and continent for 196 states. Scraped 9 April 2026. Text is CC BY-SA 4.0.</li>
       <li>Regime dates: individual Wikipedia articles on each event, linked from the country panel. Curated in <code>add_political_date.py</code> in the repository, reviewed 18 September 2026.</li>
-      <li>Taiwan is missing from the Wikipedia list and was added by hand (<code>add_extras.py</code>), sourced to the articles on the Republic of China and Retrocession Day.</li>
-      <li>Boundaries: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> 1:50m admin-0 countries, public domain.</li>
+      <li>Taiwan, Northern Cyprus, Somaliland, Abkhazia and South Ossetia are missing from the Wikipedia list and were added by hand (<code>add_extras.py</code>), each sourced to two or three Wikipedia articles.</li>
+      <li>Boundaries: <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener">Natural Earth</a> 1:50m admin-0 countries and the 1:50m breakaway and disputed areas layer, both public domain.</li>
+    </ul>
+
+    <h3>Borders and recognition</h3>
+    <ul class="srcs">
+      <li><b>Borders follow control on the ground</b>, as drawn by Natural Earth: Crimea is coloured as Russia, the Golan Heights as Israel, Kashmir along the Line of Control, Western Sahara as Morocco. Colour is not an endorsement of any claim.</li>
+      <li><b>Every contested area is hatched the same way</b>, using Natural Earth's breakaway and disputed areas layer: Crimea, Donetsk and Luhansk, Golan, Jammu and Kashmir, Gilgit-Baltistan, Aksai Chin, Arunachal Pradesh, Western Sahara, Transnistria, Abyei, the Kurils and others. Hover any of them for who administers and who claims it.</li>
+      <li><b>Who gets an entry:</b> UN members and observers, plus any polity recognised by at least one UN member state that controls most of the territory it claims. That adds Kosovo, Taiwan, Northern Cyprus, Somaliland, Abkhazia and South Ossetia, each with a Status line in its panel. Transnistria (no UN-member recognition) and the Sahrawi Republic (controls only a strip of Western Sahara) have no entry.</li>
     </ul>
 
     <h3>How the map is coloured</h3>
     <ul class="srcs">
-      <li>Dependent territories such as Greenland, Puerto Rico or New Caledonia take their sovereign's colour with a hatch, and are labelled as territories on hover. They are not counted as countries.</li>
-      <li>Disputed or unrecognised areas (Western Sahara, Somaliland, Northern Cyprus, Siachen) are hatched grey. Kosovo, Palestine and Taiwan are included as entries.</li>
+      <li>Dependent territories such as Greenland, Puerto Rico or New Caledonia take their sovereign's colour with a dark hatch, and are labelled as territories on hover. They are not counted as countries.</li>
       <li>Ages are computed from the year only, against the current year. A country founded in 1948 reads as the same age all year.</li>
       <li>Small islands get a dot so they remain visible at world scale; zoom in to see their outlines.</li>
     </ul>
@@ -131,6 +137,6 @@
 
 <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>

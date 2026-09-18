@@ -29,7 +29,7 @@
       "url": "https://github.com/gom00n/CountriesAge/blob/main/add_extras.py",
       "retrieved": "2026-09-18",
       "license": "CC BY-SA 4.0 (derived from the Wikipedia articles cited in each entry)",
-      "fields": ["all fields for TWN"],
+      "fields": ["all fields for TWN, CYN, SOL, ABK, SOS", "recognition"],
       "script": "add_extras.py"
     },
     {
@@ -41,6 +41,17 @@
       "license": "Public domain",
       "fields": ["geometry", "ADM0_A3", "SOV_A3", "ISO_A2_EH", "TYPE", "NAME", "LABEL_X", "LABEL_Y"],
       "script": "build_topo.sh"
+    },
+    {
+      "id": "natural-earth-disputed",
+      "title": "Natural Earth 1:50m Admin 0 - Breakaway, Disputed Areas",
+      "publisher": "Natural Earth",
+      "url": "https://www.naturalearthdata.com/downloads/50m-cultural-vectors/",
+      "version": "5.1.1",
+      "license": "Public domain",
+      "fields": ["geometry", "BRK_NAME", "ADM0_A3", "SOVEREIGNT", "NOTE_BRK", "TYPE"],
+      "script": "build_topo.sh",
+      "note": "Drawn as a uniform hatch over the base map. Artsakh omitted (dissolved 2024). Abkhazia and South Ossetia polygons double as map units for their entries."
     },
     {
       "id": "iso-codes",

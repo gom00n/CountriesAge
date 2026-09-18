@@ -10,7 +10,7 @@ const REPO_URL = 'https://github.com/gom00n/CountriesAge';
 const SITE_HOST = 'gom00n.github.io/CountriesAge';
 const LIST_URL = 'https://en.wikipedia.org/wiki/List_of_modern_sovereign_states_by_date_of_formation';
 const WIKI = 'https://en.wikipedia.org/wiki/';
-const DATA_VERSION = '2026-09-18';   // bump when data/*.json changes so browsers refetch
+const DATA_VERSION = '2026-09-18b';   // bump when data/*.json changes so browsers refetch
 const THIS_YEAR = new Date().getFullYear();
 
 const TYPES = {
@@ -55,6 +55,10 @@ const DIFF_LABELS = ['<10 yr', '10–25 yr', '25–50 yr', '50–100 yr', '100�
 const ABS_BRACKETS = [25, 50, 100, 200, 500, Infinity];
 const ABS_LABELS = ['<25 yr', '25–50', '50–100', '100–200', '200–500', '500+ yr'];
 
+// Base polygons to drop: Morocco's polygon already covers Western Sahara, which is
+// drawn as a disputed overlay instead (see data/disputed.topo.json).
+const SKIP_BASE = new Set(['SAH']);
+
 // Wikipedia article names where the dataset's country name is not the article title
 const WIKI_NAME = {
   'Congo, Democratic Republic of the': 'Democratic Republic of the Congo',
@@ -71,6 +75,7 @@ const state = {
   mode: 'detailed',
   selected: null,       // iso of the reference country
   hover: null,          // feature id under the cursor
+  hoverDisputed: null,  // disputed-area id under the cursor
   transform: d3.zoomIdentity,
 };
 
@@ -78,10 +83,11 @@ const countries = {};   // iso -> dataset entry
 let countryList = [];   // sorted dataset entries
 const info = {};        // feature id -> { kind, iso, name, ... }
 let features = [];      // GeoJSON features (all, incl. territories)
+let disputed = [];      // disputed / breakaway areas drawn as a hatched overlay
 let borders, coast;     // meshes
 let projection, path, graticule;
 let width = 0, height = 0, dpr = 1;
-let hatch = null;
+let hatch = null, hatchDisputed = null;
 
 const stage = document.getElementById('stage');
 const base = document.getElementById('map');
@@ -90,13 +96,16 @@ const bctx = base.getContext('2d');
 const octx = overlay.getContext('2d');
 const pick = document.createElement('canvas');
 const pctx = pick.getContext('2d', { willReadFrequently: true });
+const pickD = document.createElement('canvas');
+const pdctx = pickD.getContext('2d', { willReadFrequently: true });
 
 // ── Boot ───────────────────────────────────────────────────────────────────
 async function init() {
   document.getElementById('credit-url').textContent = SITE_HOST;
 
-  const [topo, data] = await Promise.all([
+  const [topo, dtopo, data] = await Promise.all([
     fetch(`data/world.topo.json?v=${DATA_VERSION}`).then(r => r.json()),
+    fetch(`data/disputed.topo.json?v=${DATA_VERSION}`).then(r => r.json()),
     fetch(`data/countries.json?v=${DATA_VERSION}`).then(r => r.json()),
   ]);
 
@@ -104,7 +113,17 @@ async function init() {
   countryList = data.filter(c => c.iso_a3).sort((a, b) => a.country.localeCompare(b.country));
 
   const obj = topo.objects.countries;
-  features = topojson.feature(topo, obj).features;
+  const dfeats = topojson.feature(dtopo, dtopo.objects.disputed).features;
+  // Disputed areas that have their own entry (Abkhazia, South Ossetia) are drawn
+  // as units on top of the base map; the rest become the hatched overlay.
+  const units = dfeats.filter(f => countries[f.properties.id]).map(f => ({
+    type: 'Feature', geometry: f.geometry,
+    properties: { id: f.properties.id, name: f.properties.name, nameLong: f.properties.name, type: 'Breakaway',
+      sov: f.properties.id, sovName: f.properties.name, note: f.properties.note, a2: '',
+      lx: f.properties.lx, ly: f.properties.ly, overlay: true },
+  }));
+  disputed = dfeats.filter(f => !countries[f.properties.id]);
+  features = topojson.feature(topo, obj).features.filter(f => !SKIP_BASE.has(f.properties.id)).concat(units);
   borders = topojson.mesh(topo, obj, (a, b) => a !== b);
   coast = topojson.mesh(topo, obj, (a, b) => a === b);
   graticule = d3.geoGraticule10();
@@ -112,7 +131,8 @@ async function init() {
 
   projection = d3.geoEqualEarth();
   path = d3.geoPath(projection);
-  hatch = makeHatch();
+  hatch = makeHatch('rgba(8,14,26,0.55)', 45);
+  hatchDisputed = makeHatch('rgba(255,255,255,0.42)', 135);
 
   readHash();
   syncControls();
@@ -135,7 +155,7 @@ function classify() {
   }
   for (const f of features) {
     const p = f.properties;
-    const rec = { id: p.id, name: p.name, nameLong: p.nameLong, a2: p.a2, type: p.type, note: p.note, sovName: p.sovName, feature: f };
+    const rec = { id: p.id, name: p.name, nameLong: p.nameLong, a2: p.a2, type: p.type, note: p.note, sovName: p.sovName, feature: f, overlay: !!p.overlay };
     if (p.id === 'ATA') {
       rec.kind = 'antarctica';
     } else if (countries[p.id]) {
@@ -160,6 +180,7 @@ function resize() {
     c.style.width = width + 'px'; c.style.height = height + 'px';
   }
   pick.width = width; pick.height = height;
+  pickD.width = width; pickD.height = height;
 
   if (height > width * 1.2) {
     // Portrait phones: keep the map in the upper half, under the headline,
@@ -252,16 +273,30 @@ function fillFor(rec) {
   }
 }
 
-function makeHatch() {
+function makeHatch(color, angle) {
   const c = document.createElement('canvas');
   c.width = c.height = 8;
   const x = c.getContext('2d');
-  x.strokeStyle = 'rgba(8,14,26,0.55)';
+  x.strokeStyle = color;
   x.lineWidth = 2;
   x.beginPath();
-  x.moveTo(-2, 10); x.lineTo(10, -2);
-  x.moveTo(-2, 2); x.lineTo(2, -2);
-  x.moveTo(6, 10); x.lineTo(10, 6);
+  if (angle === 45) {
+    x.moveTo(-2, 10); x.lineTo(10, -2);
+    x.moveTo(-2, 2); x.lineTo(2, -2);
+    x.moveTo(6, 10); x.lineTo(10, 6);
+  } else {
+    // Two-tone so it reads on light and dark fills alike.
+    x.lineWidth = 1.6;
+    x.strokeStyle = 'rgba(0,0,0,0.55)';
+    x.moveTo(-2, -2); x.lineTo(10, 10);
+    x.moveTo(6, -2); x.lineTo(10, 2);
+    x.moveTo(-2, 6); x.lineTo(2, 10);
+    x.stroke();
+    x.beginPath();
+    x.strokeStyle = color;
+    x.moveTo(2, -2); x.lineTo(10, 6);
+    x.moveTo(-2, 2); x.lineTo(6, 10);
+  }
   x.stroke();
   return bctx.createPattern(c, 'repeat');
 }
@@ -294,10 +329,9 @@ function drawMap(ctx, proj, t, w, h, scale = 1) {
     const rec = info[f.properties.id];
     ctx.beginPath(); p(f);
     ctx.fillStyle = fillFor(rec); ctx.fill();
-    if (rec.kind === 'territory' || rec.kind === 'disputed') {
-      const pat = hatch;
-      pat.setTransform(new DOMMatrix().scale(1 / k));
-      ctx.fillStyle = pat; ctx.fill();
+    if (rec.kind === 'territory') {
+      hatch.setTransform(new DOMMatrix().scale(1 / k));
+      ctx.fillStyle = hatch; ctx.fill();
     }
   }
 
@@ -308,6 +342,23 @@ function drawMap(ctx, proj, t, w, h, scale = 1) {
 
   ctx.beginPath(); p(coast);
   ctx.lineWidth = 0.7 / k; ctx.strokeStyle = PALETTE.coast; ctx.stroke();
+
+  // Units that are not part of the border mesh (breakaway entries) get their own outline.
+  for (const f of features) {
+    if (!f.properties.overlay) continue;
+    ctx.beginPath(); p(f);
+    ctx.lineWidth = Math.max(0.5, 0.9 / Math.sqrt(k)) / k; ctx.strokeStyle = PALETTE.border; ctx.stroke();
+  }
+
+  // Disputed areas: one uniform hatch and dashed edge, whoever controls them.
+  hatchDisputed.setTransform(new DOMMatrix().scale(1 / k));
+  ctx.setLineDash([3 / k, 2 / k]);
+  for (const f of disputed) {
+    ctx.beginPath(); p(f);
+    ctx.fillStyle = hatchDisputed; ctx.fill();
+    ctx.lineWidth = 0.8 / k; ctx.strokeStyle = 'rgba(255,255,255,0.5)'; ctx.stroke();
+  }
+  ctx.setLineDash([]);
 
   ctx.restore();
 
@@ -343,7 +394,16 @@ function drawHighlights(ctx, proj, t, w, h, scale = 1, withHover = true) {
     ctx.restore();
   };
 
-  if (withHover && state.hover && state.hover !== state.selected) {
+  if (withHover && state.hoverDisputed) {
+    const f = disputed.find(d => d.properties.id === state.hoverDisputed);
+    if (f) {
+      ctx.save();
+      ctx.translate(t.x, t.y); ctx.scale(k, k);
+      ctx.beginPath(); p(f);
+      ctx.lineJoin = 'round'; ctx.lineWidth = 1.4 / k; ctx.strokeStyle = PALETTE.hover; ctx.stroke();
+      ctx.restore();
+    }
+  } else if (withHover && state.hover && state.hover !== state.selected) {
     const rec = info[state.hover];
     if (rec && rec.kind !== 'antarctica') {
       if (needsDot(rec, k)) {
@@ -421,6 +481,25 @@ function renderPick() {
     pctx.beginPath(); pctx.arc(xy[0] * k + t.x, xy[1] * k + t.y, 6, 0, Math.PI * 2);
     pctx.fillStyle = idxColor(i); pctx.fill();
   });
+
+  const pd = d3.geoPath(projection, pdctx);
+  pdctx.setTransform(1, 0, 0, 1, 0, 0);
+  pdctx.clearRect(0, 0, width, height);
+  pdctx.save();
+  pdctx.translate(t.x, t.y); pdctx.scale(k, k);
+  disputed.forEach((f, i) => {
+    pdctx.beginPath(); pd(f);
+    pdctx.fillStyle = idxColor(i); pdctx.fill();
+  });
+  pdctx.restore();
+}
+function disputedAt(x, y) {
+  if (x < 0 || y < 0 || x >= width || y >= height) return null;
+  const d = pdctx.getImageData(x, y, 1, 1).data;
+  if (d[3] < 250) return null;
+  const n = d[0] + (d[2] << 8);
+  if (n === 0 || ((n * 37) & 255) !== d[1]) return null;
+  return disputed[n - 1] ? disputed[n - 1].properties.id : null;
 }
 function featureAt(x, y) {
   if (x < 0 || y < 0 || x >= width || y >= height) return null;
@@ -478,18 +557,24 @@ function setupPointer() {
   overlay.addEventListener('mousemove', ev => {
     if (overlay.classList.contains('grabbing')) return;
     const r = overlay.getBoundingClientRect();
-    const id = featureAt(Math.round(ev.clientX - r.left), Math.round(ev.clientY - r.top));
-    if (id !== last) {
-      last = id;
+    const px = Math.round(ev.clientX - r.left), py = Math.round(ev.clientY - r.top);
+    const id = featureAt(px, py);
+    const did = disputedAt(px, py);
+    const key = (did || '') + '|' + (id || '');
+    if (key !== last) {
+      last = key;
       state.hover = id;
+      state.hoverDisputed = did;
       overlay.classList.toggle('pointer', !!id && info[id].kind !== 'antarctica');
       renderOverlay();
-      if (id && info[id].kind !== 'antarctica') showTooltip(id, ev); else hideTooltip();
-    } else if (id) {
+      if (did) showDisputedTooltip(did, id, ev);
+      else if (id && info[id].kind !== 'antarctica') showTooltip(id, ev);
+      else hideTooltip();
+    } else if (id || did) {
       positionTooltip(ev);
     }
   });
-  overlay.addEventListener('mouseleave', () => { last = null; state.hover = null; renderOverlay(); hideTooltip(); });
+  overlay.addEventListener('mouseleave', () => { last = null; state.hover = null; state.hoverDisputed = null; renderOverlay(); hideTooltip(); });
   overlay.addEventListener('click', ev => {
     const r = overlay.getBoundingClientRect();
     const id = featureAt(Math.round(ev.clientX - r.left), Math.round(ev.clientY - r.top));
@@ -515,7 +600,7 @@ function statusLine(rec) {
     const sov = countries[rec.iso] ? countries[rec.iso].country : rec.sovName;
     return `${rec.type === 'Disputed' ? 'Disputed, administered by' : 'Territory of'} ${sov}`;
   }
-  if (rec.kind === 'disputed') return rec.type === 'Sovereign country' ? 'Unrecognised state, no data' : 'Disputed territory, no data';
+  if (rec.kind === 'disputed') return 'No administering state in the data';
   return '';
 }
 function compareLine(iso, asHTML = true) {
@@ -535,12 +620,30 @@ function showTooltip(id, ev) {
   let html = `<div class="tt-name">${flag(rec) ? `<span>${flag(rec)}</span>` : ''}${esc(displayName(rec))}</div>`;
   const st = statusLine(rec);
   if (st) html += `<div class="tt-sub">${esc(st)}</div>`;
+  if (entry && entry.recognition && rec.kind === 'country') html += `<div class="tt-sub">${esc(entry.recognition)}</div>`;
   if (entry) {
     const age = ageOf(entry);
     if (rec.kind === 'territory') html += `<div class="tt-sub">Coloured as ${esc(entry.country)}</div>`;
     html += `<div class="tt-row"><span>${TYPES[state.type].label}</span><b>${esc(dateRaw(entry))}</b></div>`;
     if (age !== null) html += `<div class="tt-row"><span>Age</span><b>${age} years</b></div>`;
     if (rec.kind === 'country') html += compareLine(rec.iso);
+  }
+  tooltip.innerHTML = html;
+  tooltip.classList.remove('hidden');
+  positionTooltip(ev);
+}
+function showDisputedTooltip(did, baseId, ev) {
+  const f = disputed.find(d => d.properties.id === did);
+  if (!f) return;
+  const dp = f.properties;
+  const under = baseId && info[baseId];
+  const entry = under && countries[under.iso];
+  let html = `<div class="tt-name">${esc(dp.name)}</div>`;
+  html += `<div class="tt-sub">Disputed area · ${esc(dp.note)}</div>`;
+  if (entry) {
+    html += `<div class="tt-sub">Coloured as ${esc(entry.country)}</div>`;
+    html += `<div class="tt-row"><span>${TYPES[state.type].label}</span><b>${esc(dateRaw(entry))}</b></div>`;
+    if (under.kind === 'country') html += compareLine(under.iso);
   }
   tooltip.innerHTML = html;
   tooltip.classList.remove('hidden');
@@ -598,7 +701,7 @@ function legendSpec() {
   const spec = { title: '', ramps: [], items: [] };
   const extras = [
     { color: '#6b7789', label: 'Territory (sovereign’s colour)', hatch: true },
-    { color: PALETTE.disputed, label: 'Disputed / no data', hatch: true },
+    { color: '#6b7789', label: 'Disputed area', hatchLight: true },
   ];
   if (!state.selected) {
     spec.title = `Age of ${TYPES[state.type].phrase}`;
@@ -642,7 +745,7 @@ function renderLegend() {
     html += `<div class="lg-sep"></div>`;
   }
   html += sp.items.map(r =>
-    `<div class="lg-row${r.sel ? ' sel' : ''}"><div class="lg-swatch${r.hatch ? ' hatch' : ''}" style="background-color:${r.color}"></div>${esc(r.label)}</div>`
+    `<div class="lg-row${r.sel ? ' sel' : ''}"><div class="lg-swatch${r.hatch ? ' hatch' : ''}${r.hatchLight ? ' hatch-light' : ''}" style="background-color:${r.color}"></div>${esc(r.label)}</div>`
   ).join('');
   el.innerHTML = html;
 }
@@ -679,6 +782,7 @@ function renderInfobox() {
     <div class="ib-sub">${esc(e.continent || '')}${e.capital ? ` · Capital: ${esc(e.capital)}` : ''}</div>
     <div class="ib-age"><span class="n">${age !== null ? age : '?'}</span><span class="l">years since ${esc(t.phrase)}<br><b>${esc(dateRaw(e))}</b></span></div>
     ${state.type === 'regime' && e.political_date_note ? `<div class="ib-note">${esc(e.political_date_note)}</div>` : ''}
+    ${e.recognition ? `<div class="ib-row"><span class="ib-label">Status</span><span class="ib-value">${esc(e.recognition)}</span></div>` : ''}
     ${state.type !== 'regime' && e.previous_power ? `<div class="ib-row"><span class="ib-label">From</span><span class="ib-value">${esc(e.previous_power.slice(0, 60))}</span></div>` : ''}
     ${others.map(k => `<div class="ib-row"><span class="ib-label">${esc(TYPES[k].label)}</span><span class="ib-value">${esc(dateRaw(e, k))}</span></div>`).join('')}
     <div class="ib-stats">
@@ -913,10 +1017,15 @@ function drawLegendCard(ctx, left, bottom) {
   for (const r of sp.items) {
     ctx.fillStyle = r.color;
     roundRect(ctx, x + pad, cy - sw / 2, sw, sw, 5); ctx.fill();
-    if (r.hatch) {
+    if (r.hatch || r.hatchLight) {
       ctx.save(); roundRect(ctx, x + pad, cy - sw / 2, sw, sw, 5); ctx.clip();
-      ctx.strokeStyle = 'rgba(8,14,26,0.6)'; ctx.lineWidth = 3;
-      for (let d = -sw; d < sw * 2; d += 8) { ctx.beginPath(); ctx.moveTo(x + pad + d, cy + sw / 2); ctx.lineTo(x + pad + d + sw, cy - sw / 2); ctx.stroke(); }
+      ctx.strokeStyle = r.hatch ? 'rgba(8,14,26,0.6)' : 'rgba(255,255,255,0.5)'; ctx.lineWidth = 3;
+      for (let d = -sw; d < sw * 2; d += 8) {
+        ctx.beginPath();
+        if (r.hatch) { ctx.moveTo(x + pad + d, cy + sw / 2); ctx.lineTo(x + pad + d + sw, cy - sw / 2); }
+        else { ctx.moveTo(x + pad + d, cy - sw / 2); ctx.lineTo(x + pad + d + sw, cy + sw / 2); }
+        ctx.stroke();
+      }
       ctx.restore();
     }
     ctx.fillStyle = r.sel ? '#eef2f8' : '#c9d2e0';

@@ -3548,5 +3548,100 @@
     "political_date_raw": "1947",
     "political_date_note": "Republic of China constitution (in force in Taiwan since 1949)",
     "political_source": "https://en.wikipedia.org/wiki/Constitution_of_the_Republic_of_China"
+  },
+  {
+    "country": "Northern Cyprus",
+    "continent": "Europe",
+    "sovereignty_date": "1983-11-15",
+    "sovereignty_date_precision": "full",
+    "sovereignty_date_raw": "15 November 1983",
+    "last_subordination_date": "1983-11-15",
+    "last_subordination_date_precision": "full",
+    "last_subordination_date_raw": "15 November 1983",
+    "previous_power": "Cyprus",
+    "notes": "1983–present: Turkish Republic of Northern Cyprus. 1975–1983: Turkish Federated State of Cyprus, following the 1974 Turkish invasion.",
+    "capital": "North Nicosia",
+    "iso_a3": "CYN",
+    "recognition": "Recognised only by Turkey; claimed by Cyprus",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Northern_Cyprus",
+      "https://en.wikipedia.org/wiki/Turkish_invasion_of_Cyprus"
+    ],
+    "political_date": "1983",
+    "political_date_raw": "1983",
+    "political_date_note": "Turkish Republic of Northern Cyprus proclaimed",
+    "political_source": "https://en.wikipedia.org/wiki/Northern_Cyprus"
+  },
+  {
+    "country": "Somaliland",
+    "continent": "Africa",
+    "sovereignty_date": "1960-06-26",
+    "sovereignty_date_precision": "full",
+    "sovereignty_date_raw": "26 June 1960",
+    "last_subordination_date": "1991-05-18",
+    "last_subordination_date_precision": "full",
+    "last_subordination_date_raw": "18 May 1991",
+    "previous_power": "Somalia",
+    "notes": "1991–present: Republic of Somaliland. 1960–1991: part of Somalia. 26 June–1 July 1960: State of Somaliland, independent from the UK.",
+    "capital": "Hargeisa",
+    "iso_a3": "SOL",
+    "recognition": "Recognised by Israel (2025); claimed by Somalia",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Somaliland",
+      "https://en.wikipedia.org/wiki/State_of_Somaliland",
+      "https://en.wikipedia.org/wiki/Israel–Somaliland_relations"
+    ],
+    "political_date": "1991",
+    "political_date_raw": "1991",
+    "political_date_note": "Independence re-declared from Somalia",
+    "political_source": "https://en.wikipedia.org/wiki/Somaliland"
+  },
+  {
+    "country": "Abkhazia",
+    "continent": "Asia/Europe",
+    "sovereignty_date": "1992-07-23",
+    "sovereignty_date_precision": "full",
+    "sovereignty_date_raw": "23 July 1992",
+    "last_subordination_date": "1993-09-30",
+    "last_subordination_date_precision": "full",
+    "last_subordination_date_raw": "30 September 1993",
+    "previous_power": "Georgia",
+    "notes": "1992–present: Republic of Abkhazia (self-declared). Georgian forces withdrew at the end of the 1992–1993 war.",
+    "capital": "Sukhumi",
+    "iso_a3": "ABK",
+    "recognition": "Recognised by 5 UN members incl. Russia; claimed by Georgia",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Abkhazia",
+      "https://en.wikipedia.org/wiki/War_in_Abkhazia_(1992–1993)",
+      "https://en.wikipedia.org/wiki/International_recognition_of_Abkhazia_and_South_Ossetia"
+    ],
+    "political_date": "1994",
+    "political_date_raw": "1994",
+    "political_date_note": "Constitution of the Republic of Abkhazia adopted",
+    "political_source": "https://en.wikipedia.org/wiki/Constitution_of_Abkhazia"
+  },
+  {
+    "country": "South Ossetia",
+    "continent": "Asia/Europe",
+    "sovereignty_date": "1991-11-28",
+    "sovereignty_date_precision": "full",
+    "sovereignty_date_raw": "28 November 1991",
+    "last_subordination_date": "1992-06-24",
+    "last_subordination_date_precision": "full",
+    "last_subordination_date_raw": "24 June 1992",
+    "previous_power": "Georgia",
+    "notes": "1991–present: Republic of South Ossetia (self-declared). The Sochi agreement of 24 June 1992 ended the 1991–1992 war.",
+    "capital": "Tskhinvali",
+    "iso_a3": "SOS",
+    "recognition": "Recognised by 5 UN members incl. Russia; claimed by Georgia",
+    "sources": [
+      "https://en.wikipedia.org/wiki/South_Ossetia",
+      "https://en.wikipedia.org/wiki/1991–1992_South_Ossetia_War",
+      "https://en.wikipedia.org/wiki/International_recognition_of_Abkhazia_and_South_Ossetia"
+    ],
+    "political_date": "2001",
+    "political_date_raw": "2001",
+    "political_date_note": "Constitution adopted by referendum",
+    "political_source": "https://en.wikipedia.org/wiki/Constitution_of_South_Ossetia"
   }
 ]

@@ -258,6 +258,7 @@ a { color: var(--accent); }
 .lg-row.sel { margin: 6px 0; color: var(--ink); font-weight: 600; }
 .lg-swatch { width: 14px; height: 14px; border-radius: 3px; flex-shrink: 0; }
 .lg-swatch.hatch { background-image: repeating-linear-gradient(45deg, rgba(0,0,0,.45) 0 2px, transparent 2px 5px); }
+.lg-swatch.hatch-light { background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.5) 0 2px, transparent 2px 5px); }
 .lg-sep { height: 1px; background: rgba(255,255,255,0.08); margin: 6px 0; }
 .lg-ramp-row { display: flex; align-items: center; gap: 8px; margin-top: 4px; }
 .lg-ramp-label { width: 62px; flex-shrink: 0; color: var(--ink-2); font-size: 11px; }

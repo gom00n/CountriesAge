@@ -89,6 +89,12 @@ POLITICAL_DATES = {
     "KOR": (1987, "Sixth Republic, democratic constitution", "Sixth_Republic_of_Korea"),
     "TWN": (1947, "Republic of China constitution (in force in Taiwan since 1949)", "Constitution_of_the_Republic_of_China"),
 
+    # ── Partially recognised states (see add_extras.py for the inclusion rule) ─
+    "CYN": (1983, "Turkish Republic of Northern Cyprus proclaimed", "Northern_Cyprus"),
+    "SOL": (1991, "Independence re-declared from Somalia", "Somaliland"),
+    "ABK": (1994, "Constitution of the Republic of Abkhazia adopted", "Constitution_of_Abkhazia"),
+    "SOS": (2001, "Constitution adopted by referendum", "Constitution_of_South_Ossetia"),
+
     # ── Recent independence ───────────────────────────────────────────────────
     "TLS": (2002, "Independence restored", "History_of_East_Timor"),
     "SDS": (2011, "Independence from Sudan", "2011_South_Sudanese_independence_referendum"),
